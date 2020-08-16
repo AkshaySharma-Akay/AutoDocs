@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title><%= title %></title>
+    <style>
+        body{
+            margin:0px;
+            padding:0px;
+            font-size:16px;
+        }
+        #wrapper {
+            padding: 20px 150px;
+        }
+        h1{
+            text-align: center;
+            font-size:21px;
+        }
+        p{
+            padding:5px 0px;
+            margin:0px;
+        }
+        #header-title > p{
+            text-align: center;
+        }
+        #header-title div{
+            display: flex;
+            justify-content: space-between;
+        }
+        table {
+            margin-top: 5px;
+            border-collapse: collapse;
+            width: auto;
+            min-width: 100%;
+        }
+
+        table td,
+        table th {
+            border: 1px solid #222;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <h1>Automate Docs</h1>
+        <div id="header-title">
+            <p>Result of Class : <%= classof %></p>
+            <div>
+                <p>Teacher: <%= teacher %></p>
+                <p>Max-Marks: <%= maxmarks %></p>
+            </div>
+        </div>
+        <div id="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sr. No.</th>
+                        <th>Name</th>
+                        <th>Roll No</th>
+                        <th>Marks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% for(var i=0; i < data.length; i++) { %>
+                    <tr>
+                        <td><%= data[i].sno %></td>
+                        <td><%= data[i].name %></td>
+                        <td><%= data[i].rollno %></td>
+                        <td><%= data[i].marks %></td>
+                    </tr>
+                    <% } %>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <div>
+                <p>Place : <%= place %></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<%- include report-header.ejs -%>
+<form action="" method="POST">
+    <ul>
+        <li>
+            <label for="classof">Class : </label>
+            <input type="text" id="classof" name="classof" placeholder="Class" />
+        </li>
+        <li>
+            <label for="teachername">Teacher: </label>
+            <input type="text" id="teachername" name="teachername" placeholder="Teacher" />
+        </li>
+        <li>
+            <label for="maxmarks">Max Marks: </label>
+            <input type="number" id="maxmarks" name="maxmarks" placeholder="Max Marks" />
+        </li>
+        <li>
+            <label for="place">Place</label>
+            <input type="text" id="place" name="place" placeholder="Place"/>
+        </li>
+        <li>
+            <input type="submit"/>
+        </li>
+    </ul>
+</form>
+<%- include report-footer.ejs -%>

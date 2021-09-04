@@ -1,2 +1,3 @@
 # AutomateDocs
-Application To Automate Generation of Google Docs For Award List Generation
+* API to generate pdf reports from excel and attributes provided 
+* Stack: NodeJs, Express, 
